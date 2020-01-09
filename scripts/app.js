@@ -11,8 +11,8 @@ form.addEventListener('submit' , (e) => {
   spinner.style.display = 'flex';
   const weatherSource = `https://api.openweathermap.org/data/2.5/weather?q=${search.value}&appid=cb4b316ea7ff3ec1b3b96455c376cb8a`;
   const photoSource = `https://pixabay.com/api/?key=14392760-281ce1fc01330fca172fd23a0&q=${search.value}`
-  getWeatherData(weatherSource, data => {
-    getPhoto(photoSource, photo => {
+  getData(weatherSource, data => {
+    getData(photoSource, photo => {
       updateUI(data, photo);
       setTimeout(() => spinner.style.display = 'none', 2000);
     });
