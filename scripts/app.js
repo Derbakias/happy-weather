@@ -63,7 +63,7 @@ function updateUI(data, photo) {
             <div class="details">
               <ul>
                 <li>Temperature: ${((data.main.temp) - 273.15).toFixed(1)}°C</li>
-                <li>Cloudiness: ${data.weather[0].description}</li>
+                <li>Status: ${data.weather[0].description}</li>
                 <li>Wind: ${data.wind.speed} m/s</li>
                 <li>Wind-Direction: ${data.wind.deg}°</li>
                 <li>Humidity: ${data.main.humidity}%</li>
